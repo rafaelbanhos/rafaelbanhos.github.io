@@ -1,0 +1,280 @@
+/*
+ Theme Name: Resume
+ Theme URI: http:/newtemplate.net/demo/resume/index.html
+ Author: NewTemplate
+ Author URI: https://themeforest.net/user/newtemplete
+ Version: 1.0.1
+ Description:  Resume One Page HTML5 Theme comes out with tons of powerful features. Its modern, attractive and clean design.
+*/
+
+@keyframes pulse {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(1.3);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.whatsapp-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: flex-end;
+    height: auto;
+    position: fixed;
+    z-index: 1;
+    bottom: 30px;
+    right: 30px;
+    padding: 0;
+    margin: 0px;
+}
+
+.whatsapp-area .header {
+    position: relative;
+}
+
+.whatsapp-btn {
+    display: block;
+    justify-content: center;
+    align-content: center;
+    width: 60px;
+    height: 60px;
+    font-size: 35px;
+    text-align: center;
+    background: #3e43e9;
+    color: #fff;
+    z-index: 8;
+    transition: .3s;
+    margin: 10px;
+    padding: 7px;
+    border: none;
+    outline: none;
+    cursor: default;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+.circle-animation {
+    display: flex;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    width: 60px;
+    height: 60px;
+    margin: 10px 0px 0px 10px;
+    border-radius: 50%;
+    transition: .3s;
+    background-color: #3e43e9;
+    animation: pulse 1.2s 4.0s ease 100000000;
+}
+
+.whatsapp-popup {
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 290px;
+    padding: 20px;
+    bottom: 110px;
+    right: 5px;
+    background-color: white;
+    -webkit-box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.15);
+    display: none;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.whatsapp-popup::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 20px solid #fff;
+    position: absolute;
+    bottom: -20px;
+    right: 30px;
+    -webkit-box-shadow: 2px 0px 0px 0px rgba(0, 0, 0, 0.01);
+    -moz-box-shadow: 2px 0px 0px 0px rgba(0, 0, 0, 0.01);
+    box-shadow: 2px 0px 0px 0px rgba(0, 0, 0, 0.01);
+}
+
+.whatsapp-popup h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.whatsapp-popup p {
+    font-weight: 400;
+}
+
+.close-popup {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    right: -5px;
+    top: -10px;
+    opacity: 0.2;
+    font-size: 18px;
+}
+
+.close-popup:hover {
+    opacity: 0.5;
+}
+
+.form-area {
+    position: relative;
+}
+
+.form-area .send-btn {
+    border-radius: 50%;
+    height: 30px;
+    padding: 5px 0px;
+    top: 5px;
+    right: 5px;
+    position: absolute;
+    width: 30px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background-color: #3e43e9;
+    color: #ffffff;
+    text-align: center;
+}
+
+.form-area .send-btn:hover {
+    background-color: #505050;
+    transition: .3s;
+}
+
+.whatsapp-popup input[type=text] {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    padding: 0px 0px 0px 15px;
+    -webkit-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+    outline: none;
+    transition: .3s;
+    border: 1px solid #f6f7fd;
+}
+
+.whatsapp-popup input[type=text]:focus {
+    border: 1px solid #3e43e9;
+    box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.02);
+}
+
+.whatsapp-popup input::placeholder {
+    color: rgba(68, 68, 68, 0.705);
+    opacity: 1;
+}
+
+.chat-button-area {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.chat-area {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 25px;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    visibility: hidden;
+}
+
+.chat-area p {
+    margin: 0;
+    background: #f6f7fd;
+    padding: 10px;
+    border-radius: 0px 8px 8px 8px;
+    display: inline-block;
+    position: relative;
+}
+
+.chat-area p::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 12px solid #f6f7fd;
+    position: absolute;
+    top: 0px;
+    left: -12px;
+}
+
+.chat-area .img-item {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/*Mobile*/
+@media screen and (max-width: 480px) {
+    .whatsapp-popup {
+        width: 270px;
+    }
+}
+
+/* Mini-Mobile */
+@media screen and (max-width: 320px) {
+    .whatsapp-area {
+        display: none;
+    }
+}
+
+
