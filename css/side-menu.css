@@ -1,0 +1,384 @@
+/*
+ Theme Name: Resume
+ Theme URI: http:/newtemplate.net/demo/resume/index.html
+ Author: NewTemplate
+ Author URI: https://themeforest.net/user/newtemplete
+ Version: 1.0.1
+ Description:  Resume One Page HTML5 Theme comes out with tons of powerful features. Its modern, attractive and clean design.
+*/
+
+.left-side-area::selection {
+    background: #dedede;
+    color: #fff;
+}
+
+.left-side-area::-moz-selection {
+    background: #dedede;
+    color: #fff;
+}
+
+.left-side-area::-o-selection {
+    background: #dedede;
+    color: #fff;
+}
+
+.left-side-area::-ms-selection {
+    background: #dedede;
+    color: #fff;
+}
+
+.left-side-area::-webkit-scrollbar {
+    width: 3px;
+    background: #fcfcfc;
+}
+
+.left-side-area::-webkit-scrollbar-thumb {
+    background: #dedede;
+}
+
+/* Menu */
+.navbar {
+    display: block;
+    width: 100%;
+    color: #ffffff;
+}
+
+.navbar .copy-txt {
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 50px;
+    display: none;
+}
+
+.menu-main-area {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.left-side-area {
+    width: 20%;
+    background-color: #000000;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.102);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.10196078431372549);
+    overflow: auto;
+}
+
+.header-left-area .side-menu {
+}
+
+.header-left-area .side-menu li {
+    position: relative;
+}
+
+.header-left-area .side-menu li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    position: relative;
+    color: #ffffff;
+    line-height: 45px;
+    display: block;
+    border-top: 1px solid #383838;
+    border-left: 2px solid #383838;
+    padding: 0 0 0 55px;
+}
+
+.header-left-area .side-menu li a span {
+    font-size: 18px;
+    position: absolute;
+    left: 20px;
+    top: 1px;
+}
+
+.header-left-area .side-menu li a.active {
+    background-color: #fcfcfc;
+}
+
+.header-left-area .side-menu li a.active, .header-left-area .side-menu li a:hover {
+    color: #B5FF00;
+    text-shadow: none;
+    background-color: rgba(201, 201, 201, 0.65);
+    border-left: 2px solid #B5FF00;
+}
+
+.header-left-area .side-menu li a:before {
+    content: "";
+    display: none;
+}
+
+/* home */
+.home-area {
+    min-height: 600px;
+}
+
+.home-area .home-content {
+    z-index: 10;
+}
+
+.wave-area::after {
+    content: '';
+    background-image: url('../images/wave.png');
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    bottom: -1px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+    z-index: 9;
+}
+
+/*header content*/
+.header-content {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-image: url('../images/map.png');
+    background-position: -880px -150px;
+}
+
+.header-content .image-item {
+    margin: 0 auto;
+    position: relative;
+    height: 120px;
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.header-content .image-item img {
+    height: 120px;
+    width: 120px;
+    border-radius: 100px;
+    overflow: hidden;
+    border: 3px solid #000000;
+    display: block
+}
+
+.header-content .status {
+    position: absolute;
+    border: 3px solid #ffffff;
+    z-index: 9;
+    height: 20px;
+    width: 20px;
+    right: 10px;
+    bottom: 8px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.header-content .status.active:after {
+    content: '';
+    background: #008000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header-content .status.away:after {
+    content: '';
+    background: #FFD700;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header-content .name {
+    font-weight: 600;
+}
+
+.header-content .designation {
+    font-size: 14px;
+}
+
+/* -------------------------------- xclip -------------------------------- */
+.cd-headline.clip span {
+    display: inline-block;
+    padding: .2em 0;
+}
+
+.cd-headline.clip .cd-words-wrapper {
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.cd-headline.clip .cd-words-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 1px;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.cd-headline.clip b {
+    opacity: 0;
+    font-weight: normal;
+}
+
+.cd-headline.clip b.is-visible {
+    opacity: 1;
+}
+
+/*social icons*/
+.header-social-icons {
+    list-style: none;
+    margin-top: 50px;
+    padding: 0;
+    text-align: center;
+    display: none;
+    margin-bottom: 10px;
+}
+
+.header-social-icons li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.header-social-icons li a {
+    color: #ffffff;
+}
+
+.header-social-icons li a i {
+    font-size: 16px;
+    line-height: 14px;
+}
+
+/** * 12.0 Media Queries * ----------------------------------------------------------------------------- */
+/* Desktop */
+@media screen and (max-width: 1199px) {
+    .about-area .about-info li span {
+        float: none;
+    }
+}
+
+/* Laptop */
+@media screen and (max-width: 1024px) {
+}
+
+/* Tablet (landscape) */
+@media screen and (min-width: 991px) {
+    .navbar .navbar-toggler {
+        display: none;
+    }
+
+    .navbar {
+        height: 100vh;
+    }
+
+    .navbar .copy-txt,
+    .header-social-icons, #side-menu {
+        display: block;
+    }
+
+    /*left side*/
+    .right-side-area {
+        width: 80%;
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        float: right;
+    }
+
+    /*header left area*/
+    .header-left-area {
+        width: 100%;
+        position: relative;
+        z-index: 9;
+        height: 100vh;
+    }
+
+    .left-side-area .container {
+        padding: 0 !important;
+    }
+}
+
+/* Tablet (landscape) */
+@media screen and (max-width: 991px) {
+    .navbar .navbar-toggler {
+        top: 7px;
+        right: 0;
+        margin-left: 0
+    }
+
+    .left-side-area {
+        width: 100%;
+        z-index: 9;
+        height: inherit;
+    }
+
+    .right-side-area {
+        width: 100%;
+    }
+
+    .header-content .name {
+        margin-right: 0;
+        font-size: 14px;
+        margin-top: 5px;
+        color: #212529;
+        margin-bottom: 3px;
+    }
+
+    .header-content .image-item {
+        height: 40px;
+        width: 40px;
+        margin: initial;
+        float: left;
+    }
+
+    .header-content .image-item img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .header-content .status {
+        height: 12px;
+        width: 12px;
+        border: 2px solid #ffffffed;
+        right: 0px;
+        bottom: 2px;
+    }
+
+    .header-content .caption-area {
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        left: 0;
+    }
+
+    .header-content .designation {
+        color: #ffffff;
+        font-size: 10px;
+        margin-bottom: 0;
+    }
+
+    .header-content {
+        overflow: hidden;
+        padding: 0;
+        margin: 10px 0;
+        background: #fff;
+    }
+
+    /*toggler*/
+    .navbar .navbar-toggler-icon {
+        color: #242732;
+    }
+
+    .header-left-area .side-menu li a, .header-left-area .side-menu li a.active, .header-left-area .side-menu li a:hover {
+        border-right: none;
+    }
+}
